@@ -1,3 +1,26 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+
+    // 基础设置
+    "vim.useSystemClipboard": true,        // 让 Vim 的 y/p 直接使用系统剪贴板，方便跨应用复制粘贴[reference:2]
+    "vim.hlsearch": true,                  // 开启搜索高亮，让你能清晰看到所有匹配项[reference:3]
+    "vim.incsearch": true,                 // 开启增量搜索，每输入一个字符就即时高亮匹配[reference:4]
+    "vim.ignorecase": true,                // 搜索时忽略大小写
+    "vim.smartcase": true,                 // 若搜索词包含大写，则智能地转为大小写敏感
+
+    // 光标与界面
+    "vim.cursorStylePerMode": true,        // 根据当前模式（普通/插入）改变光标样式，提升体验
+    "vim.statusBarColorControl": true,     // 让状态栏颜色随 Vim 模式变化，当前模式一目了然
+    "vim.startInInsertMode": false,        // 启动时默认进入普通模式 (Normal)，设为 true 则进入插入模式
+
+    // 功能开关
+    "vim.useCtrlKeys": true,               // 启用 Vim 风格的 Ctrl 键组合（如 Ctrl-d 向下翻半页）
+    "vim.visualstar": true,                // 在可视模式下，按下 * 会搜索当前选中的文本
+    
+    // 快速跳转 (EasyMotion)
+    "vim.easymotion": true,                // 开启后，按 <Leader><Leader> w 可快速跳转[reference:5]
+    // 文本对象扩展 (Surround)
+    "vim.surround": true,                  // 让你能方便地增删改括号、引号、HTML标签等[reference:6]
+    // 多光标支持
+    "vim.multiCursor": true,               // 允许在 Vim 模式下使用 VSCode 强大的多光标功能[reference:7]
 }
